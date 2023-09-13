@@ -3,7 +3,10 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Interactive</title>
+
+        <!-- AOS -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
         <!-- Reset CSS -->
         <link rel="stylesheet" href="./assets/css/reset.css" />
@@ -11,5 +14,30 @@
         <!-- Style -->
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
-    <body></body>
+    <body>
+        <header class="header" data-aos="fade-down">
+            <div class="container">
+                <div class="header__wrapper">
+                    <div class="header__left">
+                        <img src="./assets/images/letter.svg" alt="letter" class="header__left-letter" />
+                        <a href="#!" class="header__left-mail">hi@arif.interactive</a>
+                    </div>
+                    <a href="/"><img src="./assets/images/memoji.svg" alt="memoji" class="header__avatar" /></a>
+                    <nav class="navbar">
+                        <ul class="navbar__list">
+                            <li><a href="#!">Projects</a></li>
+                            <li><a href="#!">Journey</a></li>
+                            <li><a href="#!">Service</a></li>
+                            <li><a href="#!">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
+    </body>
 </html>

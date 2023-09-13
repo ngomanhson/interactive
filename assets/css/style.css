@@ -54,3 +54,59 @@ a {
     color: #fdfdfd;
     background: var(--color-purple);
 }
+
+/* ===== Header ===== */
+.header {
+    padding-top: 20px;
+    background: var(--color-secondary-white);
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header__left-letter {
+    margin-right: 10px;
+}
+
+.header__left-mail {
+    color: var(--color-primary);
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 136.364%;
+    text-decoration-line: underline;
+}
+
+.header__avatar {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+/* ===== Navbar ===== */
+.navbar__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 43px;
+}
+
+.navbar__list > li > a {
+    color: var(--color-secondary);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: normal;
+    transition: all 0.3s ease;
+}
+
+.navbar__list > li > a:hover {
+    color: var(--color-purple);
+}
