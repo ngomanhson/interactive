@@ -113,6 +113,7 @@ a {
 
 /* ===== Hero ===== */
 .hero {
+    position: relative;
     padding-top: 44px;
     background: var(--color-secondary-white);
 }
@@ -124,9 +125,14 @@ a {
     gap: 156px;
 }
 
+.hero__media {
+    position: relative;
+}
+
 .hero__media-image {
     max-width: 514px;
     display: block;
+    position: relative;
 }
 
 .hero__content-heading {
@@ -182,6 +188,18 @@ a {
     align-items: center;
     justify-content: center;
     margin-left: 20px;
+}
+
+.hero__decor-media {
+    position: absolute;
+    bottom: 0;
+    left: -220px;
+}
+
+.hero__decor-content {
+    position: absolute;
+    right: 0;
+    bottom: 0;
 }
 
 /* ===== Company ===== */
