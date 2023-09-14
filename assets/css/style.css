@@ -258,3 +258,68 @@ a {
 .company__item:nth-child(7) .company__item-logo {
     background: #7f54b3;
 }
+
+/* ===== Service ===== */
+.service {
+    padding-top: 133px;
+}
+
+.service__content {
+    text-align: center;
+}
+
+.service__content-heading {
+    color: var(--color-primary);
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 117.857%;
+    letter-spacing: -2.24px;
+}
+
+.service__content-desc {
+    margin-top: 20px;
+    color: var(--color-secondary);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 166.667%;
+}
+
+.service__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-top: 60px;
+}
+
+.service__item {
+    background: var(--color-secondary-white);
+    padding: 32px 42px;
+}
+
+.service__item-icon {
+    width: 74px;
+    height: 74px;
+    border-radius: 50%;
+    border: 1px solid #d8d8d8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.service__item-title {
+    color: var(--color-primary);
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 125%;
+    letter-spacing: -1.28px;
+    margin-top: 22px;
+}
+
+.service__item-desc {
+    color: var(--color-secondary);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 166.667%;
+    max-width: 285px;
+    margin-top: 15px;
+}
