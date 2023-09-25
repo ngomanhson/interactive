@@ -48,3 +48,13 @@ a {
     color: #080415;
     background: #fff;
 }
+
+.layout {
+    background: rgb(150, 150, 150);
+    color: #080415;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
