@@ -232,11 +232,74 @@
                     </div>
                 </div>
             </div>
+
+            <!-- About -->
+            <div class="about" data-aos="fade-up" data-aos-anchor-placement="top-center">
+                <div class="container">
+                    <div class="about__wrapper">
+                        <div class="about__content" data-aos="fade-up" data-aos-duration="3000">
+                            <h3 class="about__content-title">Hey,,,,It’s Arif <img src="./assets/icons/hand.svg" alt="hand" /></h3>
+                            <h2 class="about__content-heading">Interactive Designer</h2>
+                            <p class="about__content-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna, non nisl tincidunt ut elementum turpis.</p>
+                        </div>
+
+                        <div class="about__parameter">
+                            <div class="parameter__item">
+                                <strong class="parameter__item-qty">08+</strong>
+                                <p class="parameter__item-desc">Years Experience</p>
+                            </div>
+                            <div class="parameter__item">
+                                <strong class="parameter__item-qty">21+</strong>
+                                <p class="parameter__item-desc">Features & Awards</p>
+                            </div>
+                            <div class="parameter__item">
+                                <strong class="parameter__item-qty">97%</strong>
+                                <p class="parameter__item-desc">Clients Rating</p>
+                            </div>
+                        </div>
+
+                        <div class="about__video">
+                            <video id="custom-video" width="100%" height="628">
+                                <source src="./assets/videos/Apple_Pay.mp4" type="video/mp4" />
+                            </video>
+
+                            <div class="about__video-play"><img src="./assets/icons/play.svg" alt="play" /></div>
+
+                            <a href="https://youtu.be/ykNWqUlLftE?si=hQB9UOIR_Nej1x0D" class="btn about__video-btn">Intro Video</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </main>
 
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
         <script>
             AOS.init();
+        </script>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script>
+            $(document).ready(function () {
+                var video = document.getElementById("custom-video");
+                var playButton = document.querySelector(".about__video-play");
+
+                playButton.addEventListener("click", function () {
+                    if (video.paused) {
+                        video.play();
+                        playButton.style.display = "none";
+                    } else {
+                        video.pause();
+                        playButton.style.display = "block";
+                    }
+                });
+
+                video.addEventListener("click", function () {
+                    if (!video.paused) {
+                        video.pause();
+                        playButton.style.display = "block";
+                    }
+                });
+            });
         </script>
     </body>
 </html>
