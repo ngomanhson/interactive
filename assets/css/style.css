@@ -120,6 +120,7 @@ a {
 /* ===== Hero ===== */
 .hero {
     padding-top: 44px;
+    margin-bottom: 49px;
 }
 
 .hero__media-image {
@@ -209,4 +210,73 @@ a {
     position: absolute;
     right: 0;
     bottom: 123px;
+}
+
+/* ===== Company ===== */
+.company {
+    padding-top: 49px;
+}
+
+.company__inner-heading {
+    position: relative;
+    color: #080415;
+    font-size: 4.2rem;
+    font-weight: 500;
+    padding-left: 100px;
+    line-height: 119.048%;
+    letter-spacing: -1.68px;
+}
+
+.company__inner-heading::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    width: 86px;
+    height: 1px;
+    top: 22px;
+    left: 0;
+    margin-right: 13px;
+    background: #5d3bee;
+}
+
+.company__list {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 36px;
+}
+
+.company__item {
+    display: flex;
+    align-items: center;
+}
+
+.company__item-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    margin-right: 13px;
+}
+
+.company__item:nth-child(2) .company__item-logo {
+    background: #fbfaff;
+}
+
+.company__item:nth-child(3) .company__item-logo {
+    background: #fee101;
+}
+
+.company__item:nth-child(4) .company__item-logo {
+    background: #f00;
+}
+
+.company__item:nth-child(5) .company__item-logo {
+    background: #14a800;
+}
+
+.company__item:nth-child(7) .company__item-logo {
+    background: #7f54b3;
 }
