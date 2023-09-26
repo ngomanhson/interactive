@@ -20,20 +20,22 @@
         max-width: 37px;
     }
 
+    .inner__avatar img {
+        display: block;
+    }
+
     .menu-header {
         padding-bottom: 21px;
         border-bottom: 1px solid #d6d3e2;
     }
 
     .menu-mobile {
-        padding-top: 26px;
-        display: flex;
-        align-items: center;
         gap: 10px;
     }
 
     .mobile__letter-icon,
     .mobile__menu-icon {
+        display: inline-block;
         width: 32px;
         height: 32px;
         object-fit: cover;
