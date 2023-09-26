@@ -9,6 +9,10 @@
     .mobile-header {
         display: none;
     }
+
+    .dots {
+        display: none;
+    }
 }
 
 /* ===== Tablet & Mobile ===== */
@@ -197,6 +201,16 @@
         grid-template-columns: repeat(2, 1fr);
         margin-top: 40px;
     }
+
+    /* ===== Service ===== */
+    .service__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .dots {
+        display: none;
+    }
 }
 
 /* ===== Mobile ===== */
@@ -265,5 +279,67 @@
     .company__list {
         grid-template-columns: repeat(2, 1fr);
         margin-top: 40px;
+    }
+
+    /* ===== Service ===== */
+    .service__list {
+        display: flex;
+        overflow: hidden;
+    }
+
+    .service__item {
+        margin-top: 50px;
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    .service__item-icon {
+        width: 62px;
+        height: 62px;
+    }
+
+    .service__item-title {
+        margin-top: 30px;
+        font-size: 2.8rem;
+        line-height: 128.571%;
+        letter-spacing: -1.12px;
+    }
+
+    .service__item-desc {
+        margin-top: 10px;
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 175%;
+    }
+
+    .dots {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .dots-outside {
+        padding: 3px;
+        background: #cecdd0;
+        border-radius: 50%;
+        border: 1px solid transparent;
+    }
+
+    .dot {
+        display: block;
+        padding: 6px;
+        background: #cecdd0;
+        border-radius: 50%;
+    }
+
+    .outside-active {
+        border: 1px solid #5d3bee;
+        background: #fff;
+    }
+
+    .dot-active {
+        background: #5d3bee;
     }
 }

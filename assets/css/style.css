@@ -215,6 +215,7 @@ a {
 /* ===== Company ===== */
 .company {
     padding-top: 49px;
+    margin-bottom: 70px;
 }
 
 .company__inner-heading {
@@ -279,4 +280,70 @@ a {
 
 .company__item:nth-child(7) .company__item-logo {
     background: #7f54b3;
+}
+
+/* ===== Service ===== */
+.service {
+    padding-top: 70px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.service__content-heading {
+    color: #080415;
+    font-size: 5.6rem;
+    font-weight: 500;
+    line-height: 117.857%;
+    letter-spacing: -2.24px;
+}
+
+.service__content-desc {
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 166.667%;
+    max-width: 534px;
+    margin: 20px auto 0;
+}
+
+.service__list {
+    display: flex;
+    gap: 30px;
+}
+
+.service__item {
+    background: #fbfaff;
+    padding: 33px 42px 32px 43px;
+    text-align: left;
+}
+
+.service__item-icon {
+    width: 74px;
+    height: 74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 1px solid #dedede;
+}
+
+.service__item-icon > img {
+    display: block;
+}
+
+.service__item-title {
+    margin-top: 22px;
+    color: #080415;
+    font-size: 3.2rem;
+    font-weight: 500;
+    line-height: 125%;
+    letter-spacing: -1.28px;
+}
+
+.service__item-desc {
+    margin-top: 15px;
+    color: #51586a;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 166.667%;
 }
