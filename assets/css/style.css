@@ -2,6 +2,7 @@
 
 :root {
     --font-primary: "DM Sans", sans-serif;
+    --transition: all 0.3s ease-out;
 }
 
 * {
@@ -42,11 +43,13 @@ a {
     min-width: 170px;
     height: var(--height);
     line-height: var(--height);
-    border: none;
+    border: 1px solid transparent;
     font-weight: 600;
     font-size: 1.8rem;
     color: #080415;
     background: #fff;
+    cursor: pointer;
+    transition: var(--transition);
 }
 
 .layout {
@@ -59,6 +62,11 @@ a {
     margin-bottom: 15px;
 }
 
+.header,
+.hero {
+    background: #fbfaff;
+}
+
 /* ===== Header ===== */
 .header {
     padding-top: 20px;
@@ -69,6 +77,7 @@ a {
     max-width: calc(100% - 30px);
     margin-left: auto;
     margin-right: auto;
+    position: relative;
 }
 
 .header__inner {
@@ -106,4 +115,98 @@ a {
     color: #51586a;
     font-size: 1.8rem;
     font-weight: 400;
+}
+
+/* ===== Hero ===== */
+.hero {
+    padding-top: 44px;
+}
+
+.hero__media-image {
+    position: relative;
+    z-index: 3;
+    display: block;
+}
+
+.hero__content {
+    margin-top: 137px;
+}
+
+.hero__content-heading {
+    color: #080415;
+    font-size: 8rem;
+    font-weight: 500;
+    line-height: 95%;
+    letter-spacing: -3.2px;
+}
+
+.hero__content-desc {
+    margin-top: 20px;
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 166.667%;
+}
+
+.hero__cta {
+    margin-top: 50px;
+}
+
+.hero__cta-btn {
+    background: #5d3bee;
+    color: #fdfdfd;
+}
+
+.hero__cta-btn:hover {
+    background: #080415;
+}
+
+.hero__cta-link {
+    margin-left: 30px;
+    color: #080415;
+    font-size: 1.8rem;
+    font-weight: 700;
+    line-height: 166.667%;
+    text-decoration-line: underline;
+    transition: var(--transition);
+}
+
+.hero__cta-link:hover {
+    color: #5d3bee;
+}
+
+.hero__social {
+    margin-top: 104px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hero__social-desc {
+    color: #51586a;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 142.857%;
+}
+
+.hero__social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #dedede;
+}
+
+.hero-decor {
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+}
+
+.hero-decor2 {
+    position: absolute;
+    right: 0;
+    bottom: 123px;
 }

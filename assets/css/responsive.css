@@ -12,6 +12,23 @@
 
 /* ===== Tablet & Mobile ===== */
 @media screen and (max-width: 991px) {
+    /* ===== Common ===== */
+    .btn {
+        --height: 55px;
+
+        min-width: 147px;
+        font-size: 16px;
+    }
+
+    .order-1 {
+        order: 1;
+    }
+
+    .order-2 {
+        order: 2;
+    }
+
+    /* ===== Header ===== */
     .pc-header {
         display: none;
     }
@@ -96,12 +113,71 @@
     .menu-checkbox:checked ~ .menu-drawer {
         transform: translateX(0);
     }
+
+    /* ===== Hero ===== */
+    .hero__content {
+        margin-top: 0;
+    }
+
+    .hero-decor2 {
+        display: none;
+    }
+
+    .hero__cta {
+        margin-top: 30px;
+    }
+
+    .hero__cta-link {
+        font-size: 1.6rem;
+        line-height: 187.5%;
+        margin-left: 40px;
+    }
+
+    .hero__social {
+        margin-top: 30px;
+    }
+
+    .hero__media-image,
+    .hero-decor {
+        width: 100%;
+    }
 }
 
 /* ===== Tablet ===== */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    /* ===== Hero ===== */
+    .hero__content-heading {
+        font-size: 7.2rem;
+        line-height: 119.048%;
+        letter-spacing: -1.68px;
+    }
+
+    .hero__content-desc {
+        font-size: 1.8rem;
+        line-height: 162.5%;
+        max-width: 690px;
+    }
 }
 
 /* ===== Mobile ===== */
 @media screen and (max-width: 767px) {
+    /* ===== Hero ===== */
+    .hero {
+        padding-top: 50px;
+    }
+
+    .hero__content-heading {
+        font-size: 4.2rem;
+        line-height: 119.048%;
+        letter-spacing: -1.68px;
+    }
+
+    .hero__content-desc {
+        font-size: 1.6rem;
+        line-height: 162.5%;
+    }
+
+    .hero-decor {
+        left: 0;
+    }
 }
