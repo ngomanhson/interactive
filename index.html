@@ -13,14 +13,73 @@
 
         <!-- Style -->
         <link rel="stylesheet" href="./assets/css/style.css" />
+
+        <!-- Responsive -->
+        <link rel="stylesheet" href="./assets/css/responsive.css" />
     </head>
     <body>
-        <!-- Header -->
+        <!-- Header PC-->
         <header class="header">
-            <div class="container">
-                <div class="header__inner">
-                    <div class="layout">Header</div>
+            <div class="header__container">
+                <div class="header__inner menu-header">
+                    <!-- Tablet - Mobile menu -->
+                    <a href="#!" class="inner__avatar">
+                        <img src="./assets/icons/memoji-boys-02.svg" alt="Memoji Boys" />
+                    </a>
+
+                    <div class="menu-mobile">
+                        <a href="#!">
+                            <img src="./assets/icons/letter.svg" alt="Letter icon" class="mobile__letter-icon" />
+                        </a>
+
+                        <label for="menu-checkbox">
+                            <img src="./assets/icons/menu.svg" alt="Menu" class="mobile__menu-icon" />
+                        </label>
+                    </div>
                 </div>
+
+                <!-- Header PC -->
+                <div class="header__inner pc-header">
+                    <div class="inner__account">
+                        <img src="./assets/icons/letter.svg" alt="Letter icon" class="inner__account-letter" />
+                        <a href="#!" class="inner__account-account">hi@arif.interactive</a>
+                    </div>
+
+                    <a href="#!">
+                        <img src="./assets/icons/memoji-boys.svg" alt="Memoji Boys" class="header__inner-avatar" />
+                    </a>
+
+                    <nav class="navbar">
+                        <ul class="nav__list" id="pc-nav">
+                            <li><a href="#!">Projects</a></li>
+                            <li><a href="#!">Journey</a></li>
+                            <li><a href="#!">Service</a></li>
+                            <li><a href="#!">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+
+        <!-- Header Tablet - Mobile-->
+        <header class="mobile-header">
+            <input type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden />
+            <!-- Overlay -->
+            <label for="menu-checkbox" class="menu-overlay"></label>
+
+            <!-- Menu content -->
+            <div class="menu-drawer">
+                <div class="drawer__inner">
+                    <!-- Logo -->
+                    <a href="#">
+                        <img src="./assets/icons/memoji-boys-02.svg" alt="Memoji Boys" class="drawer__inner-avatar" />
+                    </a>
+
+                    <a href="#!" class="drawer__inner-account">hi@arif.interactive</a>
+                </div>
+
+                <!-- Navigation -->
+                <ul id="mobile-nav"></ul>
             </div>
         </header>
 
@@ -161,5 +220,13 @@
                 </div>
             </div>
         </footer>
+
+        <script>
+            const pcNav = document.querySelector("#pc-nav");
+            const mobileNav = document.querySelector("#mobile-nav");
+
+            // Copy from PC Nac -> Mobile Nav
+            mobileNav.innerHTML = pcNav.innerHTML;
+        </script>
     </body>
 </html>

@@ -58,3 +58,52 @@ a {
     justify-content: center;
     margin-bottom: 15px;
 }
+
+/* ===== Header ===== */
+.header {
+    padding-top: 20px;
+}
+
+.header__container {
+    width: 1330px;
+    max-width: calc(100% - 30px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.inner__account {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.inner__account-letter {
+    width: 46px;
+    height: 46px;
+    object-fit: cover;
+}
+
+.inner__account-account {
+    color: #080415;
+    font-size: 2.2rem;
+    font-weight: 500;
+    line-height: 136.364%;
+    text-decoration-line: underline;
+}
+
+.nav__list {
+    display: flex;
+    gap: 43px;
+}
+
+.nav__list > li > a {
+    color: #51586a;
+    font-size: 1.8rem;
+    font-weight: 400;
+}
