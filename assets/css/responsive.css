@@ -1,5 +1,6 @@
 :root {
     --menu-drawer: all 0.5s ease;
+    --transition: all 0.3s ease-out;
 }
 
 /* ===== PC ===== */
@@ -50,14 +51,6 @@
         gap: 10px;
     }
 
-    .mobile__letter-icon,
-    .mobile__menu-icon {
-        display: inline-block;
-        width: 32px;
-        height: 32px;
-        object-fit: cover;
-    }
-
     .menu-overlay {
         position: fixed;
         inset: 0;
@@ -93,16 +86,16 @@
     }
 
     #mobile-nav {
-        margin-top: 20px;
+        margin-top: 30px;
     }
 
     #mobile-nav > li > a {
-        display: block;
-        color: #080415;
-        padding: 8px 0;
-        font-size: 1.4rem;
-        font-weight: 400;
-        text-align: left;
+        transition: var(--transition);
+    }
+
+    #mobile-nav > li > a:focus {
+        text-decoration: underline;
+        color: #5d3bee;
     }
 
     .menu-checkbox:checked ~ .menu-overlay {
@@ -145,6 +138,24 @@
 
 /* ===== Tablet ===== */
 @media screen and (min-width: 768px) and (max-width: 991px) {
+    /* ===== Header ===== */
+    #mobile-nav > li > a {
+        display: block;
+        color: #080415;
+        padding: 18px 0;
+        font-size: 1.8rem;
+        font-weight: 500;
+        text-align: left;
+    }
+
+    .mobile__letter-icon,
+    .mobile__menu-icon {
+        display: inline-block;
+        width: 42px;
+        height: 42px;
+        object-fit: cover;
+    }
+
     /* ===== Hero ===== */
     .hero__content-heading {
         font-size: 7.2rem;
@@ -161,6 +172,24 @@
 
 /* ===== Mobile ===== */
 @media screen and (max-width: 767px) {
+    /* ===== Header ===== */
+    #mobile-nav > li > a {
+        display: block;
+        color: #080415;
+        padding: 15px 0;
+        font-size: 1.4rem;
+        font-weight: 400;
+        text-align: left;
+    }
+
+    .mobile__letter-icon,
+    .mobile__menu-icon {
+        display: inline-block;
+        width: 32px;
+        height: 32px;
+        object-fit: cover;
+    }
+
     /* ===== Hero ===== */
     .hero {
         padding-top: 50px;
