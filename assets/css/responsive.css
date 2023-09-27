@@ -288,6 +288,7 @@
     }
 
     .service__item {
+        padding: 29px 50px;
         margin-top: 50px;
         width: 100%;
         flex-shrink: 0;
@@ -296,6 +297,19 @@
     .service__item-icon {
         width: 62px;
         height: 62px;
+    }
+
+    .service__content-heading {
+        font-size: 3.6rem;
+        font-weight: 500;
+        line-height: 116.667%;
+        letter-spacing: -1.44px;
+    }
+
+    .service__content-desc {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 162.5%;
     }
 
     .service__item-title {
